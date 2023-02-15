@@ -19,8 +19,11 @@ namespace JaSON
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            //Очистка листбокса
             listBox1.Items.Clear();
+            //Создание экземпляра DateTime
             DateTime fri = new DateTime(Convert.ToInt32(textBox1.Text), 1, 13);
+            //Создание экземпляра List
             List<string> amogus = new List<string>();
             for (int i = 0; i <= 12; i++)
             {
@@ -36,6 +39,7 @@ namespace JaSON
                     }
                 }
             }
+            //Вывод дат в листбокс
             foreach (var sussy in amogus)
             {
                 listBox1.Items.Add(sussy);
